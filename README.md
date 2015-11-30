@@ -18,3 +18,19 @@
     git commit -m "Add django requirements."
     git push
 
+# setup project
+
+    django-admin.py startproject diangoblog
+    cd diangoblog/
+    # edit diangoblog/settings.py (DATABASES, TIME_ZONE, LANGUAGE_CODE, TEMPLATE_DIRS)
+    MY_TEMPLATE=/home/ubuntu/workspace/template
+    mkdir $MYTEMPLATE
+    ./manage.py syncdb (admin/root)
+    # edit diangoblog/urls.py
+    pip install django-tagging
+    ./manage.py startapp blog
+    # edit blog/models.py
+    # create/edit blog/admin.py
+    git add ../README.md diangoblog
+    git commit -m "Setup app."
+    git push
